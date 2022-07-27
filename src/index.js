@@ -34,7 +34,6 @@ import { redisCache } from "./config/cache";
     context: async () => {
       return { cache: redisCache, pubsub: PubSubSingleton };
     },
-    cache: redisCache,
     dataSources: () => ({
       cinemaDataSource: new cinemaDataSource(),
       scheduleDataSource: new scheduleDataSource(),
